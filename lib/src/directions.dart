@@ -268,6 +268,7 @@ class DirectionsResponse extends GoogleResponseStatus {
 
   factory DirectionsResponse.fromJson(Map<String, dynamic> json) =>
       _$DirectionsResponseFromJson(json);
+
   Map<String, dynamic> toJson() => _$DirectionsResponseToJson(this);
 }
 
@@ -295,6 +296,7 @@ class Waypoint {
 
   factory Waypoint.fromJson(Map<String, dynamic> json) =>
       _$WaypointFromJson(json);
+
   Map<String, dynamic> toJson() => _$WaypointToJson(this);
 }
 
@@ -322,6 +324,7 @@ class GeocodedWaypoint {
 
   factory GeocodedWaypoint.fromJson(Map<String, dynamic> json) =>
       _$GeocodedWaypointFromJson(json);
+
   Map<String, dynamic> toJson() => _$GeocodedWaypointToJson(this);
 }
 
@@ -359,6 +362,7 @@ class Route {
   });
 
   factory Route.fromJson(Map<String, dynamic> json) => _$RouteFromJson(json);
+
   Map<String, dynamic> toJson() => _$RouteToJson(this);
 }
 
@@ -420,6 +424,7 @@ class Leg extends _Step {
         );
 
   factory Leg.fromJson(Map<String, dynamic> json) => _$LegFromJson(json);
+
   Map<String, dynamic> toJson() => _$LegToJson(this);
 }
 
@@ -454,6 +459,7 @@ class Step extends _Step {
         );
 
   factory Step.fromJson(Map<String, dynamic> json) => _$StepFromJson(json);
+
   Map<String, dynamic> toJson() => _$StepToJson(this);
 }
 
@@ -465,6 +471,7 @@ class Polyline {
 
   factory Polyline.fromJson(Map<String, dynamic> json) =>
       _$PolylineFromJson(json);
+
   Map<String, dynamic> toJson() => _$PolylineToJson(this);
 }
 
@@ -476,6 +483,7 @@ class Value {
   Value({required this.value, required this.text});
 
   factory Value.fromJson(Map<String, dynamic> json) => _$ValueFromJson(json);
+
   Map<String, dynamic> toJson() => _$ValueToJson(this);
 }
 
@@ -487,6 +495,7 @@ class Fare extends Value {
       : super(value: value, text: text);
 
   factory Fare.fromJson(Map<String, dynamic> json) => _$FareFromJson(json);
+
   @override
   Map<String, dynamic> toJson() => _$FareToJson(this);
 }
@@ -500,6 +509,7 @@ class Time extends Value {
       : super(value: value, text: text);
 
   factory Time.fromJson(Map<String, dynamic> json) => _$TimeFromJson(json);
+
   @override
   Map<String, dynamic> toJson() => _$TimeToJson(this);
 }
@@ -537,6 +547,7 @@ class TransitDetails {
 
   factory TransitDetails.fromJson(Map<String, dynamic> json) =>
       _$TransitDetailsFromJson(json);
+
   Map<String, dynamic> toJson() => _$TransitDetailsToJson(this);
 }
 
@@ -548,6 +559,7 @@ class Stop {
   Stop({required this.name, required this.location});
 
   factory Stop.fromJson(Map<String, dynamic> json) => _$StopFromJson(json);
+
   Map<String, dynamic> toJson() => _$StopToJson(this);
 }
 
@@ -583,6 +595,7 @@ class Line {
   });
 
   factory Line.fromJson(Map<String, dynamic> json) => _$LineFromJson(json);
+
   Map<String, dynamic> toJson() => _$LineToJson(this);
 }
 
@@ -600,6 +613,7 @@ class TransitAgency {
 
   factory TransitAgency.fromJson(Map<String, dynamic> json) =>
       _$TransitAgencyFromJson(json);
+
   Map<String, dynamic> toJson() => _$TransitAgencyToJson(this);
 }
 
@@ -621,6 +635,7 @@ class VehicleType {
 
   factory VehicleType.fromJson(Map<String, dynamic> json) =>
       _$VehicleTypeFromJson(json);
+
   Map<String, dynamic> toJson() => _$VehicleTypeToJson(this);
 
   bool isType(String type) => type.toLowerCase() == this.type.toLowerCase();

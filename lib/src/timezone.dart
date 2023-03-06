@@ -97,5 +97,6 @@ class TimezoneResponse extends GoogleResponseStatus {
 
   factory TimezoneResponse.fromJson(Map<String, dynamic> json) =>
       _$TimezoneResponseFromJson(json);
+
   Map<String, dynamic> toJson() => _$TimezoneResponseToJson(this);
 }

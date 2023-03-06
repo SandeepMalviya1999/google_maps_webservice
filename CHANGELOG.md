@@ -17,7 +17,7 @@
 
 ## 0.0.20-nullsafety.2
 
-- Bug fix on Details by Place ID, 
+- Bug fix on Details by Place ID,
 
 ## 0.0.20-nullsafety.1
 

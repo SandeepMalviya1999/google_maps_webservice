@@ -14,6 +14,7 @@ class Location {
 
   factory Location.fromJson(Map<String, dynamic> json) =>
       _$LocationFromJson(json);
+
   Map<String, dynamic> toJson() => _$LocationToJson(this);
 
   @override
@@ -40,6 +41,7 @@ class Geometry {
 
   factory Geometry.fromJson(Map<String, dynamic> json) =>
       _$GeometryFromJson(json);
+
   Map<String, dynamic> toJson() => _$GeometryToJson(this);
 }
 
@@ -58,6 +60,7 @@ class Bounds {
       '${northeast.lat},${northeast.lng}|${southwest.lat},${southwest.lng}';
 
   factory Bounds.fromJson(Map<String, dynamic> json) => _$BoundsFromJson(json);
+
   Map<String, dynamic> toJson() => _$BoundsToJson(this);
 }
 
@@ -79,11 +82,17 @@ abstract class GoogleResponseStatus {
   final String? errorMessage;
 
   bool get isOkay => status == okay;
+
   bool get hasNoResults => status == zeroResults;
+
   bool get isOverQueryLimit => status == overQueryLimit;
+
   bool get isDenied => status == requestDenied;
+
   bool get isInvalid => status == invalidRequest;
+
   bool get unknownError => status == unknownErrorStatus;
+
   bool get isNotFound => status == notFound;
 
   GoogleResponseStatus({required this.status, this.errorMessage});
@@ -123,6 +132,7 @@ class AddressComponent {
 
   factory AddressComponent.fromJson(Map<String, dynamic> json) =>
       _$AddressComponentFromJson(json);
+
   Map<String, dynamic> toJson() => _$AddressComponentToJson(this);
 }
 
@@ -162,6 +172,7 @@ class _TravelMode {
   // ignore: unused_element
   factory _TravelMode.fromJson(Map<String, dynamic> json) =>
       _$_TravelModeFromJson(json);
+
   Map<String, dynamic> toJson() => _$_TravelModeToJson(this);
 }
 
@@ -191,6 +202,7 @@ class _RouteType {
   // ignore: unused_element
   factory _RouteType.fromJson(Map<String, dynamic> json) =>
       _$_RouteTypeFromJson(json);
+
   Map<String, dynamic> toJson() => _$_RouteTypeToJson(this);
 }
 
@@ -217,6 +229,7 @@ class _Unit {
 
   // ignore: unused_element
   factory _Unit.fromJson(Map<String, dynamic> json) => _$_UnitFromJson(json);
+
   Map<String, dynamic> toJson() => _$_UnitToJson(this);
 }
 
@@ -246,6 +259,7 @@ class _TrafficModel {
   // ignore: unused_element
   factory _TrafficModel.fromJson(Map<String, dynamic> json) =>
       _$_TrafficModelFromJson(json);
+
   Map<String, dynamic> toJson() => _$_TrafficModelToJson(this);
 }
 
@@ -276,6 +290,7 @@ class _TransitMode {
   // ignore: unused_element
   factory _TransitMode.fromJson(Map<String, dynamic> json) =>
       _$_TransitModeFromJson(json);
+
   Map<String, dynamic> toJson() => _$_TransitModeToJson(this);
 }
 
@@ -305,6 +320,7 @@ class _TransitRoutingPreferences {
   // ignore: unused_element
   factory _TransitRoutingPreferences.fromJson(Map<String, dynamic> json) =>
       _$_TransitRoutingPreferencesFromJson(json);
+
   Map<String, dynamic> toJson() => _$_TransitRoutingPreferencesToJson(this);
 }
 

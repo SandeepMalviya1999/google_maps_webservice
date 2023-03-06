@@ -136,6 +136,7 @@ class GeolocationError {
 
   factory GeolocationError.fromJson(Map<String, dynamic> json) =>
       _$GeolocationErrorFromJson(json);
+
   Map<String, dynamic> toJson() => _$GeolocationErrorToJson(this);
 }
 
@@ -155,6 +156,7 @@ class GeolocationErrorResponse {
 
   factory GeolocationErrorResponse.fromJson(Map<String, dynamic> json) =>
       _$GeolocationErrorResponseFromJson(json);
+
   Map<String, dynamic> toJson() => _$GeolocationErrorResponseToJson(this);
 }
 
@@ -174,6 +176,7 @@ class GeolocationResponse {
 
   factory GeolocationResponse.fromJson(Map<String, dynamic> json) =>
       _$GeolocationResponseFromJson(json);
+
   Map<String, dynamic> toJson() => _$GeolocationResponseToJson(this);
 }
 
@@ -204,6 +207,7 @@ class CellTower extends _AccessObject {
 
   factory CellTower.fromJson(Map<String, dynamic> json) =>
       _$CellTowerFromJson(json);
+
   Map<String, dynamic> toJson() => _$CellTowerToJson(this);
 }
 
@@ -226,5 +230,6 @@ class WifiAccessPoint extends _AccessObject {
 
   factory WifiAccessPoint.fromJson(Map<String, dynamic> json) =>
       _$WifiAccessPointFromJson(json);
+
   Map<String, dynamic> toJson() => _$WifiAccessPointToJson(this);
 }

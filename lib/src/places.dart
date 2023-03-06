@@ -553,6 +553,7 @@ class PlacesSearchResponse extends GoogleResponseStatus {
 
   factory PlacesSearchResponse.fromJson(Map<String, dynamic> json) =>
       _$PlacesSearchResponseFromJson(json);
+
   Map<String, dynamic> toJson() => _$PlacesSearchResponseToJson(this);
 }
 
@@ -619,6 +620,7 @@ class PlacesSearchResult {
 
   factory PlacesSearchResult.fromJson(Map<String, dynamic> json) =>
       _$PlacesSearchResultFromJson(json);
+
   Map<String, dynamic> toJson() => _$PlacesSearchResultToJson(this);
 }
 
@@ -708,6 +710,7 @@ class PlaceDetails {
 
   factory PlaceDetails.fromJson(Map<String, dynamic> json) =>
       _$PlaceDetailsFromJson(json);
+
   Map<String, dynamic> toJson() => _$PlaceDetailsToJson(this);
 }
 
@@ -730,6 +733,7 @@ class OpeningHoursDetail {
 
   factory OpeningHoursDetail.fromJson(Map<String, dynamic> json) =>
       _$OpeningHoursDetailFromJson(json);
+
   Map<String, dynamic> toJson() => _$OpeningHoursDetailToJson(this);
 }
 
@@ -748,6 +752,7 @@ class OpeningHoursPeriodDate {
 
   factory OpeningHoursPeriodDate.fromJson(Map<String, dynamic> json) =>
       _$OpeningHoursPeriodDateFromJson(json);
+
   Map<String, dynamic> toJson() => _$OpeningHoursPeriodDateToJson(this);
 }
 
@@ -760,6 +765,7 @@ class OpeningHoursPeriod {
 
   factory OpeningHoursPeriod.fromJson(Map<String, dynamic> json) =>
       _$OpeningHoursPeriodFromJson(json);
+
   Map<String, dynamic> toJson() => _$OpeningHoursPeriodToJson(this);
 }
 
@@ -782,6 +788,7 @@ class Photo {
   });
 
   factory Photo.fromJson(Map<String, dynamic> json) => _$PhotoFromJson(json);
+
   Map<String, dynamic> toJson() => _$PhotoToJson(this);
 }
 
@@ -796,22 +803,19 @@ class AlternativeId {
 
   factory AlternativeId.fromJson(Map<String, dynamic> json) =>
       _$AlternativeIdFromJson(json);
+
   Map<String, dynamic> toJson() => _$AlternativeIdToJson(this);
 }
 
 enum PriceLevel {
   @JsonValue(0)
   free,
-
   @JsonValue(1)
   inexpensive,
-
   @JsonValue(2)
   moderate,
-
   @JsonValue(3)
   expensive,
-
   @JsonValue(4)
   veryExpensive,
 }
@@ -836,6 +840,7 @@ class PlacesDetailsResponse extends GoogleResponseStatus {
 
   factory PlacesDetailsResponse.fromJson(Map<String, dynamic> json) =>
       _$PlacesDetailsResponseFromJson(json);
+
   Map<String, dynamic> toJson() => _$PlacesDetailsResponseToJson(this);
 }
 
@@ -873,6 +878,7 @@ class Review {
   });
 
   factory Review.fromJson(Map<String, dynamic> json) => _$ReviewFromJson(json);
+
   Map<String, dynamic> toJson() => _$ReviewToJson(this);
 }
 
@@ -892,6 +898,7 @@ class PlacesAutocompleteResponse extends GoogleResponseStatus {
 
   factory PlacesAutocompleteResponse.fromJson(Map<String, dynamic> json) =>
       _$PlacesAutocompleteResponseFromJson(json);
+
   Map<String, dynamic> toJson() => _$PlacesAutocompleteResponseToJson(this);
 }
 
@@ -932,6 +939,7 @@ class Prediction {
 
   factory Prediction.fromJson(Map<String, dynamic> json) =>
       _$PredictionFromJson(json);
+
   Map<String, dynamic> toJson() => _$PredictionToJson(this);
 }
 
@@ -946,6 +954,7 @@ class Term {
   });
 
   factory Term.fromJson(Map<String, dynamic> json) => _$TermFromJson(json);
+
   Map<String, dynamic> toJson() => _$TermToJson(this);
 
   @override
@@ -972,6 +981,7 @@ class MatchedSubstring {
 
   factory MatchedSubstring.fromJson(Map<String, dynamic> json) =>
       _$MatchedSubstringFromJson(json);
+
   Map<String, dynamic> toJson() => _$MatchedSubstringToJson(this);
 
   @override
@@ -1002,5 +1012,6 @@ class StructuredFormatting {
 
   factory StructuredFormatting.fromJson(Map<String, dynamic> json) =>
       _$StructuredFormattingFromJson(json);
+
   Map<String, dynamic> toJson() => _$StructuredFormattingToJson(this);
 }

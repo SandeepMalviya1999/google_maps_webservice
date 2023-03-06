@@ -287,6 +287,7 @@ class DistanceResponse extends GoogleResponseStatus {
 
   factory DistanceResponse.fromJson(Map<String, dynamic> json) =>
       _$DistanceResponseFromJson(json);
+
   Map<String, dynamic> toJson() => _$DistanceResponseToJson(this);
 }
 
@@ -298,6 +299,7 @@ class Row {
   Row({required this.elements});
 
   factory Row.fromJson(Map<String, dynamic> json) => _$RowFromJson(json);
+
   Map<String, dynamic> toJson() => _$RowToJson(this);
 }
 
@@ -315,6 +317,7 @@ class Element {
 
   factory Element.fromJson(Map<String, dynamic> json) =>
       _$ElementFromJson(json);
+
   Map<String, dynamic> toJson() => _$ElementToJson(this);
 }
 
@@ -326,5 +329,6 @@ class Value {
   Value({required this.value, required this.text});
 
   factory Value.fromJson(Map<String, dynamic> json) => _$ValueFromJson(json);
+
   Map<String, dynamic> toJson() => _$ValueToJson(this);
 }
